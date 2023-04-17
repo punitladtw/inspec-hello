@@ -1,0 +1,12 @@
+name: aws-account-configuration-validation
+title: AWS account configuration validation
+license: Apache-2.0
+summary: InSpec Compliance Profile For AWS Accounts
+version: 0.1.0
+inspec_version: '~> 5'
+inputs:
+depends:
+  - name: inspec-aws
+    url: https://github.com/inspec/inspec-aws/archive/main.tar.gz
+supports:
+  - platform: aws
