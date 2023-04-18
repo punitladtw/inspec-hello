@@ -1,7 +1,7 @@
 control "RDS clusters must be configured for multi AZ" do
   client = Aws::RDS::Client.new
   clusters = client.describe_db_clusters().db_clusters
-  clusters.each do |cluster| 
+  clusters.each do |cluster|
     describe cluster["db_cluster_identifier"] do
       it "configured for multi AZ" do
         cluster['multi_az'].should be true

@@ -4,7 +4,7 @@
 In order to run inspec against aws, we'll need to install these dependencies: 
 - saml2aws - see https://github.com/Versent/saml2aws#install
 - ruby - https://www.ruby-lang.org/en/documentation/installation/
-- inspec - see https://github.com/inspec/inspec#installation
+- inspec - see https://github.com/inspec/inspec#installation or for macos: brew install chef/chef/inspec
 
 ## Run the tests
 Prior to running tests, you'll need to login to AWS via saml2aws (against your IdP). Run: 
